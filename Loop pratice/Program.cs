@@ -7,15 +7,26 @@ namespace Loop_pratice
     {
         static void Main(string[] args)
         {
-            string user;
-            Console.WriteLine("Hello user, Welcome to Todd's Casino, you will start off with 3 points and for every game of heads and tails you win, you will gain one point, and every loss you will lose 1 point, you can walk away at anytime! Have fun! ");
-            Console.WriteLine("Are you ready to play?");
-            user = Console.ReadLine().ToLower();
-            if (user == "Yes") ;
-            {
-                Console.WriteLine("Ok, heads or tails?");
-            }
+            //int number1, number2, number3, number4;
+            //double average;
+            //Console.WriteLine("This will be the average of four numbers in a loop...");
+            //Console.WriteLine("What is your first number?");
+            //while (!int.TryParse(Console.ReadLine(), out number1));
+            //Console.WriteLine("2nd number?");
+            //while (!int.TryParse(Console.ReadLine(),out number2));
+            //Console.WriteLine("3rd number?");
+            //while (!int.TryParse(Console.ReadLine(), out number3));
+            //Console.WriteLine("Final number?");
+            //while (!int.TryParse(Console.ReadLine(), out number4));
+            //average = (number1 + number2 + number3 + number4) / 4;
+            //while (average == number1 + number2 + number3 + number4) ;
+            //{
+            //    Console.WriteLine("The average of those four numbers is: " + average);
+            //}
+
+
+        }
             
         }
     }
-}
+
