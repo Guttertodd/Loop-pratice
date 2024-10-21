@@ -27,33 +27,43 @@ namespace Loop_pratice
             Random random = new Random();
             int numberToGuess = random.Next(1, 101);
             int userGuess = 0;
+            bool done = false;
             Console.WriteLine("Guess a number between 1 and 100:");
-            while (numberToGuess != userGuess)
-                try
-                {
-                    userGuess = int.Parse(Console.ReadLine());
-                    if (numberToGuess < userGuess)
-                    {
-                        Console.WriteLine("Too high, try agian");
-                    }
-                    else if (numberToGuess > userGuess)
-                    {
-                        Console.WriteLine("Too low, try agian");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Great job! You guessed the correct number!");
-                    }
-                    if (userGuess >= 100) ;
-                    {
-                        Console.WriteLine("Your guess needs to between 1 and 100.");
-                    }
-                }
+           int.TryParse(Console.ReadLine(), out userGuess);
+            while (!done)
+            {
 
-                catch (Exception e)
+
+
+
+
+                if (numberToGuess == userGuess)
                 {
-                    Console.WriteLine("Please enter a vaild number");
+                    done = true;
+                    Console.WriteLine("Congrats! You guessed the right number!");
+
                 }
+                else if (userGuess < numberToGuess)
+                {
+                    Console.WriteLine("Too low, Try again");
+                    int.TryParse(Console.ReadLine(), out userGuess);
+                    Console.WriteLine();
+                }
+                else (numberToGuess < userGuess);
+                {
+                    Console.WriteLine("Too high, Try again");
+                    int.TryParse(Console.ReadLine(), out userGuess);
+                    Console.WriteLine();
+                }
+               
+
+            }
+                
+                    
+
+               
+                    Console.WriteLine("Please enter a vaild number");
+                
         }
     }
 }
