@@ -27,14 +27,16 @@ namespace Loop_pratice
             Random random = new Random();
             int numberToGuess = random.Next(1, 101);
             int userGuess = 0;
+            int guessCount = 0;
+            int maxGuess = 7;
             bool done = false;
-            Console.WriteLine("Guess a number between 1 and 100:");
-           int.TryParse(Console.ReadLine(), out userGuess);
-            while (!done)
+            while (!done && maxGuess);
             {
+                Console.WriteLine("Guess a number between 1 and 100:");
 
+                int.TryParse(Console.ReadLine(), out userGuess);
 
-
+                guessCount++;
 
 
                 if (numberToGuess == userGuess)
@@ -46,23 +48,17 @@ namespace Loop_pratice
                 else if (userGuess < numberToGuess)
                 {
                     Console.WriteLine("Too low, Try again");
-                    int.TryParse(Console.ReadLine(), out userGuess);
                     Console.WriteLine();
                 }
-                else (numberToGuess < userGuess);
+                else if (numberToGuess <= userGuess)
                 {
                     Console.WriteLine("Too high, Try again");
-                    int.TryParse(Console.ReadLine(), out userGuess);
                     Console.WriteLine();
                 }
-               
+             
+
 
             }
-                
-                    
-
-               
-                    Console.WriteLine("Please enter a vaild number");
                 
         }
     }
