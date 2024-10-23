@@ -30,7 +30,7 @@ namespace Loop_pratice
             int guessCount = 0;
             int maxGuess = 7;
             bool done = false;
-            while (!done && maxGuess);
+            while (!done && guessCount < maxGuess) 
             {
                 Console.WriteLine("Guess a number between 1 and 100:");
 
@@ -50,12 +50,16 @@ namespace Loop_pratice
                     Console.WriteLine("Too low, Try again");
                     Console.WriteLine();
                 }
-                else if (numberToGuess <= userGuess)
+                else if (numberToGuess < userGuess)
                 {
                     Console.WriteLine("Too high, Try again");
                     Console.WriteLine();
                 }
-             
+                if (guessCount == maxGuess)
+                {
+                    Console.WriteLine("You reached the max amout of guesses!");
+                }
+                        
 
 
             }
